@@ -58,7 +58,11 @@
       }
 
       .btn {
-        .button-style();
+        .button-style(@btn-bg-color, white);
+        &:hover, &:active {
+          background-color: white;
+          color: @btn-bg-color;
+        }
       }
     }
 
